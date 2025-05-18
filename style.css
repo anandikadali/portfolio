@@ -297,4 +297,69 @@ main {
   box-shadow: 0 15px 30px rgba(95, 69, 230, 0.6);
 }
 
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .page-heading {
+    font-size: 2rem;
+  }
+
+  .welcome {
+    font-size: 2.2rem;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .link-card {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .projects-container,
+  .skills-container,
+  .achievements-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .project-card,
+  .skill-card,
+  .achievement-card {
+    width: 90%;
+  }
+
+  .contact-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .content-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .skill-card ul li,
+  .achievement-card p {
+    font-size: 0.95rem;
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  main {
+    padding: 20px 15px;
+  }
+}
 
