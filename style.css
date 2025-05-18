@@ -363,40 +363,27 @@ main {
   }
 }
 
-section {
-  width: 100%;
-  padding: 60px 20px;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;        /* Make card full width on mobile */
+  max-width: 300px;   /* Max width for larger screens */
   box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Add visual separation between sections */
-section:not(:last-child) {
-  margin-bottom: 60px;
-  border-bottom: 1px solid #dcdde1;
-}
-
-/* Headings inside sections */
-section h1, section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #130f40;
-  font-size: 2rem;
-}
-
-/* Override margin on individual containers */
-.skills-container,
-.achievements-container,
-.projects-container {
-  margin-top: 0; /* Remove conflicting margin */
-}
-
-/* Fix for skill card hover color override */
-.skill-card:hover h2,
-.skill-card:hover ul li {
-  color: white;
-}
-
-/* Fix for achievement card hover title */
-.achievement-card:hover h2 {
-  color: white;
+/* Media query for wider screens (like PC) */
+@media(min-width: 600px) {
+  .card {
+    width: 200px;     /* Fixed width on bigger screens */
+  }
 }
